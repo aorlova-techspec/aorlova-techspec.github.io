@@ -213,26 +213,40 @@
       { y: 18, autoAlpha: 0 },
       { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out', delay: 0.18 });
 
-    /* Появление секций */
+    /* Появление секций: fromTo с явными конечными значениями — ScrollTrigger.refresh()
+       не может «перехватить» y=40 как конечное (иначе карточки застряли бы ниже).
+       У .project-card есть CSS transition: transform — сдвиг в reveal с ней конфликтует,
+       поэтому сетка проектов появляется только по прозрачности (ряд всегда ровный). */
     document.querySelectorAll('[data-reveal-stagger]').forEach(function (box) {
-      gsap.from(box.children, {
-        y: 40,
-        autoAlpha: 0,
-        duration: 0.7,
-        stagger: 0.08,
-        ease: 'power3.out',
-        scrollTrigger: { trigger: box, start: 'top 86%', once: true }
-      });
+      var fadeOnly = box.classList.contains('projects-grid');
+      gsap.fromTo(box.children,
+        fadeOnly ? { autoAlpha: 0 } : { y: 40, autoAlpha: 0 },
+        fadeOnly ? {
+          autoAlpha: 1,
+          duration: 0.7,
+          stagger: 0.08,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: box, start: 'top 86%', once: true }
+        } : {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.7,
+          stagger: 0.08,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: box, start: 'top 86%', once: true }
+        });
     });
 
     document.querySelectorAll('[data-reveal]').forEach(function (el) {
-      gsap.from(el, {
-        y: 40,
-        autoAlpha: 0,
-        duration: 0.7,
-        ease: 'power3.out',
-        scrollTrigger: { trigger: el, start: 'top 90%', once: true }
-      });
+      gsap.fromTo(el,
+        { y: 40, autoAlpha: 0 },
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.7,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 90%', once: true }
+        });
     });
 
     /* Отрисовка галочек в benefits */

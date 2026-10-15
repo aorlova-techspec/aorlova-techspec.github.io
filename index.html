@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алена Орлова — AI Automation / Integration Expert | Автоматизация бизнес-процессов</title>
+  <meta name="description" content="Автоматизирую бизнес-процессы с помощью AI, n8n, CRM и интеграций. AI-ассистенты, amoCRM/Kommo, webhooks, API. Более 25 лет в IT.">
+  <meta name="theme-color" content="#0A0F1C">
+
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://aorlova-techspec.github.io/">
+  <meta property="og:url" content="https://aorlova-techspec.github.io/">
+  <meta property="og:title" content="Алена Орлова — AI Automation / Integration Expert">
+  <meta property="og:description" content="Автоматизирую бизнес-процессы с помощью AI, n8n, CRM и интеграций. Связываю сервисы и превращаю ручные процессы в работающие системы.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="grid-bg" aria-hidden="true"></canvas>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" data-i18n-aria="logo.aria" aria-label="Алена Орлова — наверх">
+        <span class="logo-mark">AO</span>
+        <span class="logo-text" data-i18n="logo.name">Алена Орлова</span>
+      </a>
+
+      <nav class="nav" id="nav" data-i18n-aria="nav.aria" aria-label="Основная навигация">
+        <a href="#services" class="nav-link" data-i18n="nav.services">Что я делаю</a>
+        <a href="#cases" class="nav-link" data-i18n="nav.cases">Кейсы</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">Обо мне</a>
+        <a href="#stack" class="nav-link" data-i18n="nav.stack">Стек</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Язык / Language">
+          <button type="button" class="lang-btn is-active" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="https://t.me/LinaWalker27" target="_blank" rel="noopener" class="btn btn-primary btn-sm js-magnetic" data-i18n="cta.short">Обсудить задачу</a>
+        <button type="button" class="burger" id="burger" data-i18n-aria="burger.aria" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" data-section>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow" data-hero-fade>
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span data-i18n="hero.eyebrow">AI Automation / n8n / CRM / Integrations</span>
+        </p>
+        <h1 class="hero-title" data-hero-el data-i18n="hero.title">АЛЕНА ОРЛОВА</h1>
+        <p class="hero-role" data-hero-fade>
+          <span id="typed-role" class="typed">AI Automation / Integration Expert</span><span class="typed-cursor" aria-hidden="true"></span>
+        </p>
+        <div class="hero-sub">
+          <p data-hero-el data-i18n="hero.sub1">Автоматизирую бизнес-процессы с помощью AI, n8n, CRM и интеграций.</p>
+          <p class="hero-sub-muted" data-hero-el data-i18n="hero.sub2">Связываю сервисы, создаю AI-ассистентов и превращаю ручные процессы в работающие автоматизированные системы.</p>
+        </div>
+        <div class="hero-actions" data-hero-fade>
+          <a href="https://t.me/LinaWalker27" target="_blank" rel="noopener" class="btn btn-primary btn-lg js-magnetic" data-i18n="cta.main">Обсудить задачу</a>
+          <a href="#cases" class="btn btn-ghost btn-lg" data-i18n="hero.secondary">Смотреть кейсы</a>
+        </div>
+        <div class="hero-badge" data-hero-fade>
+          <span class="hero-badge-num"><span class="js-count" data-count-to="25">25</span>+</span>
+          <span class="hero-badge-label" data-i18n="hero.badge">лет в IT</span>
+        </div>
+      </div>
+
+      <a href="#services" class="scroll-hint" data-i18n-aria="scroll.aria" aria-label="Прокрутить вниз">
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+        <span class="scroll-hint-text" data-i18n="hero.scroll">SCROLL</span>
+      </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">01 / SERVICES</span>
+          <h2 class="section-title" data-i18n="services.title">Что я делаю</h2>
+        </div>
+
+        <div class="grid-4" data-reveal-stagger>
+          <article class="card card-service" data-tilt>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12a8 8 0 0 1-8 8H4l1.7-2.8A8 8 0 1 1 21 12Z"/>
+                <path d="m12 7.2 1.1 2.4 2.4 1.1-2.4 1.1L12 14.2l-1.1-2.4L8.5 10.7l2.4-1.1L12 7.2Z" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <h3 class="card-title" data-i18n="services.s1.title">AI-ассистенты и AI-автоматизация</h3>
+            <p class="card-text" data-i18n="services.s1.text">Создаю AI-ассистентов для бизнеса: ответы по базе знаний, квалификация лидов, сбор данных, передача заявок менеджеру, интеграция с CRM и другими сервисами.</p>
+          </article>
+
+          <article class="card card-service" data-tilt>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <circle cx="5" cy="12" r="2.4"/>
+                <circle cx="19" cy="6" r="2.4"/>
+                <circle cx="19" cy="18" r="2.4"/>
+                <path d="M7.4 11.2 16.6 6.8M7.4 12.8l9.2 4.4"/>
+              </svg>
+            </div>
+            <h3 class="card-title" data-i18n="services.s2.title">n8n и интеграции</h3>
+            <p class="card-text" data-i18n="services.s2.text">Настраиваю автоматические сценарии и связываю между собой CRM, формы, мессенджеры, AI, таблицы, базы данных и внешние API.</p>
+          </article>
+
+          <article class="card card-service" data-tilt>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3.5 5h17l-6.6 7.7V19l-3.8 2v-8.3L3.5 5Z"/>
+                <path d="M8 8.5h8" opacity=".6"/>
+              </svg>
+            </div>
+            <h3 class="card-title" data-i18n="services.s3.title">amoCRM / Kommo</h3>
+            <p class="card-text" data-i18n="services.s3.text">Настраиваю воронки, автоматизации, роботов, поля, интеграции, webhooks, маршрутизацию заявок и бизнес-процессы.</p>
+          </article>
+
+          <article class="card card-service" data-tilt>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.5 12a8.5 8.5 0 1 1-2.5-6"/>
+                <path d="M20.5 3.5v5h-5"/>
+                <circle cx="12" cy="12" r="2.6"/>
+              </svg>
+            </div>
+            <h3 class="card-title" data-i18n="services.s4.title">Автоматизация бизнес-процессов</h3>
+            <p class="card-text" data-i18n="services.s4.text">Разбираю текущий процесс, нахожу ручные и слабые места и проектирую более удобную автоматизированную схему работы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section section-alt" id="benefits" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">02 / BENEFITS</span>
+          <h2 class="section-title" data-i18n="benefits.title">Чем я могу быть полезна</h2>
+        </div>
+
+        <ul class="benefits-grid" data-reveal-stagger>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b1">убрать ручную работу и повторяющиеся действия;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b2">ускорить обработку заявок;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b3">снизить риск потери клиентов;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b4">связать разрозненные сервисы в единую систему;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b5">внедрить AI-ассистента в поддержку или продажи;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b6">автоматизировать работу CRM;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b7">настроить передачу данных через API и webhooks;</span>
+          </li>
+          <li class="benefit">
+            <svg class="check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".25"/><path class="draw-path" d="m7.5 12.4 3 3 6-6.6"/></svg>
+            <span data-i18n="benefits.b8">собрать рабочий MVP или внутренний сервис с помощью AI-assisted development.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section" id="trust" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">03 / TRUST</span>
+          <h2 class="section-title" data-i18n="trust.title">Почему мне можно доверять</h2>
+        </div>
+
+        <div class="stats-row" data-reveal-stagger>
+          <div class="stat">
+            <div class="stat-num"><span class="js-count" data-count-to="25">25</span>+</div>
+            <div class="stat-label" data-i18n="trust.stat1">лет в IT</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="js-count" data-count-to="15">15</span>+</div>
+            <div class="stat-label" data-i18n="trust.stat2">лет Oracle DBA</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span class="js-count" data-count-to="5">5</span></div>
+            <div class="stat-label" data-i18n="trust.stat3">кейсов в портфолио</div>
+          </div>
+        </div>
+
+        <ol class="trust-list" data-reveal-stagger>
+          <li class="trust-item"><span class="trust-idx">01</span><p data-i18n="trust.t1">Более 25 лет в IT.</p></li>
+          <li class="trust-item"><span class="trust-idx">02</span><p data-i18n="trust.t2">Более 15 лет работала Oracle DBA, поэтому хорошо понимаю данные, структуру систем, надежность и интеграционную логику.</p></li>
+          <li class="trust-item"><span class="trust-idx">03</span><p data-i18n="trust.t3">Большой практический опыт с amoCRM, GetCourse, ботами, webhooks и автоматизацией.</p></li>
+          <li class="trust-item"><span class="trust-idx">04</span><p data-i18n="trust.t4">Умею смотреть на задачу не как на отдельный сервис, а как на весь процесс: заявка → CRM → коммуникация → продажа → оплата → сопровождение → аналитика.</p></li>
+          <li class="trust-item"><span class="trust-idx">05</span><p data-i18n="trust.t5">Самостоятельно разбираюсь в новых инструментах, тестирую решения и довожу их до рабочего результата.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section class="section section-alt" id="cases" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">04 / CASES</span>
+          <h2 class="section-title" data-i18n="cases.title">Кейсы</h2>
+        </div>
+
+        <div class="cases-grid" data-reveal-stagger>
+
+          <article class="card card-case card-case-lg" data-tilt>
+            <div class="case-head">
+              <span class="case-num">CASE 01</span>
+              <h3 class="card-title" data-i18n="case1.title">AI-ассистент для бизнеса</h3>
+            </div>
+            <p class="card-text" data-i18n="case1.desc">AI-ассистент отвечает на частые вопросы по базе знаний, собирает данные клиента, квалифицирует обращение и передает заявку менеджеру.</p>
+            <div class="scheme-wrap">
+              <svg class="scheme" viewBox="0 0 540 150" role="img" data-i18n-aria="case1.aria" aria-label="Схема: база знаний → AI → квалификация → менеджер">
+                <g class="scheme-lines">
+                  <path class="scheme-line" d="M110 75 H143"/>
+                  <path class="scheme-line" d="M247 75 H280"/>
+                  <path class="scheme-line" d="M384 75 H417"/>
+                </g>
+                <g class="scheme-nodes">
+                  <g class="scheme-node" transform="translate(6 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case1.n1">База знаний</text></g>
+                  <g class="scheme-node" transform="translate(143 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle">AI</text></g>
+                  <g class="scheme-node" transform="translate(280 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case1.n3">Квалификация</text></g>
+                  <g class="scheme-node" transform="translate(417 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case1.n4">Менеджер</text></g>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+          <article class="card card-case card-case-lg" data-tilt>
+            <div class="case-head">
+              <span class="case-num">CASE 02</span>
+              <h3 class="card-title" data-i18n="case2.title">Интеграция Tilda → GetCourse → Vakas Tools → amoCRM</h3>
+            </div>
+            <p class="card-text" data-i18n="case2.desc">Автоматическая передача регистраций и заказов между сервисами с маршрутизацией данных в нужную воронку CRM.</p>
+            <div class="scheme-wrap">
+              <svg class="scheme" viewBox="0 0 540 150" role="img" data-i18n-aria="case2.aria" aria-label="Схема интеграции: Tilda → GetCourse → Vakas Tools → amoCRM">
+                <g class="scheme-lines">
+                  <path class="scheme-line" d="M110 75 H143"/>
+                  <path class="scheme-line" d="M247 75 H280"/>
+                  <path class="scheme-line" d="M384 75 H417"/>
+                </g>
+                <g class="scheme-nodes">
+                  <g class="scheme-node" transform="translate(6 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle">Tilda</text></g>
+                  <g class="scheme-node" transform="translate(143 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle">GetCourse</text></g>
+                  <g class="scheme-node" transform="translate(280 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle">Vakas Tools</text></g>
+                  <g class="scheme-node" transform="translate(417 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle">amoCRM</text></g>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+          <article class="card card-case" data-tilt>
+            <div class="case-head">
+              <span class="case-num">CASE 03</span>
+              <h3 class="card-title" data-i18n="case3.title">amoCRM / Kommo</h3>
+            </div>
+            <p class="card-text" data-i18n="case3.desc">Настройка CRM-процессов, автоматизаций, роботов, виджетов, распределения заявок и интеграций с внешними сервисами.</p>
+            <div class="scheme-wrap">
+              <svg class="scheme" viewBox="0 0 540 150" role="img" data-i18n-aria="case3.aria" aria-label="Схема: заявка → роботы → воронка → менеджер">
+                <g class="scheme-lines">
+                  <path class="scheme-line" d="M110 75 H143"/>
+                  <path class="scheme-line" d="M247 75 H280"/>
+                  <path class="scheme-line" d="M384 75 H417"/>
+                </g>
+                <g class="scheme-nodes">
+                  <g class="scheme-node" transform="translate(6 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case3.n1">Заявка</text></g>
+                  <g class="scheme-node" transform="translate(143 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case3.n2">Роботы</text></g>
+                  <g class="scheme-node" transform="translate(280 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case3.n3">Воронка</text></g>
+                  <g class="scheme-node" transform="translate(417 51)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case3.n4">Менеджер</text></g>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+          <article class="card card-case" data-tilt>
+            <div class="case-head">
+              <span class="case-num">CASE 04</span>
+              <h3 class="card-title" data-i18n="case4.title">n8n Automation</h3>
+            </div>
+            <p class="card-text" data-i18n="case4.desc">Автоматические сценарии обработки заявок, передачи данных, уведомлений, AI-обработки и работы с внешними API.</p>
+            <div class="scheme-wrap scheme-wrap-tall">
+              <svg class="scheme" viewBox="0 0 540 210" role="img" data-i18n-aria="case4.aria" aria-label="Схема: триггер → n8n → API, уведомления, AI">
+                <g class="scheme-lines">
+                  <path class="scheme-line" d="M110 105 H186"/>
+                  <path class="scheme-line" d="M294 105 C334 105 344 34 384 34"/>
+                  <path class="scheme-line" d="M294 105 H384"/>
+                  <path class="scheme-line" d="M294 105 C334 105 344 176 384 176"/>
+                </g>
+                <g class="scheme-nodes">
+                  <g class="scheme-node" transform="translate(6 81)"><rect width="104" height="48" rx="10"/><text x="52" y="30" text-anchor="middle" data-i18n="case4.n1">Триггер</text></g>
+                  <g class="scheme-node scheme-node-hl" transform="translate(186 81)"><rect width="108" height="48" rx="10"/><text x="54" y="30" text-anchor="middle">n8n</text></g>
+                  <g class="scheme-node" transform="translate(384 10)"><rect width="150" height="48" rx="10"/><text x="75" y="30" text-anchor="middle">API</text></g>
+                  <g class="scheme-node" transform="translate(384 81)"><rect width="150" height="48" rx="10"/><text x="75" y="30" text-anchor="middle" data-i18n="case4.n3">Уведомления</text></g>
+                  <g class="scheme-node" transform="translate(384 152)"><rect width="150" height="48" rx="10"/><text x="75" y="30" text-anchor="middle">AI</text></g>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+          <article class="card card-case" data-tilt>
+            <div class="case-head">
+              <span class="case-num">CASE 05</span>
+              <h3 class="card-title" data-i18n="case5.title">Vibe Coding / AI-assisted development</h3>
+            </div>
+            <p class="card-text" data-i18n="case5.desc">Разработка небольших веб-приложений, трекеров, калькуляторов, лендингов и MVP с помощью AI-инструментов.</p>
+            <div class="scheme-wrap">
+              <svg class="scheme" viewBox="0 0 540 150" role="img" data-i18n-aria="case5.aria" aria-label="Схема: идея → AI-код → MVP">
+                <g class="scheme-lines">
+                  <path class="scheme-line" d="M150 75 H200"/>
+                  <path class="scheme-line" d="M340 75 H390"/>
+                </g>
+                <g class="scheme-nodes">
+                  <g class="scheme-node" transform="translate(10 51)"><rect width="140" height="48" rx="10"/><text x="70" y="30" text-anchor="middle" data-i18n="case5.n1">Идея</text></g>
+                  <g class="scheme-node" transform="translate(200 51)"><rect width="140" height="48" rx="10"/><text x="70" y="30" text-anchor="middle" data-i18n="case5.n2">AI-код</text></g>
+                  <g class="scheme-node scheme-node-hl" transform="translate(390 51)"><rect width="140" height="48" rx="10"/><text x="70" y="30" text-anchor="middle">MVP</text></g>
+                </g>
+              </svg>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">05 / ABOUT</span>
+          <h2 class="section-title" data-i18n="about.title">Обо мне</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal-stagger>
+            <p class="about-p" data-i18n="about.p1">Я инженер-системотехник с более чем 25-летним опытом в IT.</p>
+            <p class="about-p" data-i18n="about.p2">Раньше много лет работала с базами данных и корпоративными системами, позже — с CRM, онлайн-сервисами, интеграциями и автоматизацией.</p>
+            <p class="about-quote" data-i18n="about.quote">Сейчас мой основной вектор — AI Automation, AI Agents, n8n, API-интеграции и AI-assisted development.</p>
+            <p class="about-p" data-i18n="about.p3">При этом мой опыт amoCRM, GetCourse и бизнес-процессов помогает мне создавать решения, которые работают не только технически, но и полезны бизнесу.</p>
+          </div>
+
+          <div class="terminal" data-reveal aria-hidden="true">
+            <div class="terminal-bar">
+              <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+              <em class="terminal-name">integration.n8n</em>
+            </div>
+            <pre class="terminal-body"><code><span class="t-line" data-tline>> trigger: new_lead(webhook)</span>
+<span class="t-line" data-tline>→ ai.qualify(lead) ......... <b class="ok">warm</b></span>
+<span class="t-line" data-tline>→ crm.amo.create_lead(pipeline: <b>"sales"</b>)</span>
+<span class="t-line" data-tline>→ notify(manager: telegram) <b class="ok">done</b></span>
+<span class="t-line t-muted" data-tline>// ручная работа: 0 шагов</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section section-alt" id="stack" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">06 / STACK</span>
+          <h2 class="section-title" data-i18n="stack.title">Основной стек</h2>
+        </div>
+
+        <div class="stack-groups" data-reveal-stagger>
+          <div class="stack-group">
+            <span class="stack-label">AI / Automation</span>
+            <div class="pills">
+              <span class="pill">n8n</span><span class="pill">AI Agents</span><span class="pill">OpenAI API</span><span class="pill">Prompt Engineering</span><span class="pill">API Integration</span><span class="pill">Webhooks</span><span class="pill">JSON</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <span class="stack-label">CRM</span>
+            <div class="pills">
+              <span class="pill">amoCRM / Kommo</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <span class="stack-label">Bots</span>
+            <div class="pills">
+              <span class="pill">Savvy.ai</span><span class="pill">Salebot</span><span class="pill">Telegram</span><span class="pill">VK</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <span class="stack-label">Business tools</span>
+            <div class="pills">
+              <span class="pill">GetCourse</span><span class="pill">Tilda</span><span class="pill">Vakas Tools</span><span class="pill">Unisender</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <span class="stack-label">Development</span>
+            <div class="pills">
+              <span class="pill">GitHub</span><span class="pill">Railway</span><span class="pill">OpenCode</span><span class="pill">AI-assisted development</span><span class="pill">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" data-section>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-num">07 / PROJECTS</span>
+          <h2 class="section-title" data-i18n="projects.title">Проекты и ссылки</h2>
+        </div>
+
+        <div class="projects-grid" data-reveal-stagger>
+          <a class="project-card project-github" href="https://github.com/aorlova-techspec" target="_blank" rel="noopener">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.5v-1.73c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            <div class="project-info">
+              <div class="project-name">aorlova-techspec</div>
+              <div class="project-url">github.com/aorlova-techspec</div>
+            </div>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="project-card" href="https://01site-massage.netlify.app" target="_blank" rel="noopener">
+            <div class="project-info"><div class="project-name">01site-massage</div>
+            <div class="project-url">01site-massage.netlify.app</div></div>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="project-card" href="https://marina-streltsova.netlify.app" target="_blank" rel="noopener">
+            <div class="project-info"><div class="project-name">marina-streltsova</div>
+            <div class="project-url">marina-streltsova.netlify.app</div></div>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="project-card" href="https://nera-manicure.netlify.app" target="_blank" rel="noopener">
+            <div class="project-info"><div class="project-name">nera-manicure</div>
+            <div class="project-url">nera-manicure.netlify.app</div></div>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="project-card" href="https://elan-lash-studio.netlify.app" target="_blank" rel="noopener">
+            <div class="project-info"><div class="project-name">elan-lash-studio</div>
+            <div class="project-url">elan-lash-studio.netlify.app</div></div>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="project-card" href="https://aorlova-techspec.github.io/english-tutor" target="_blank" rel="noopener">
+            <div class="project-info"><div class="project-name">english-tutor</div>
+            <div class="project-url">aorlova-techspec.github.io/english-tutor</div></div>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" data-section>
+      <div class="container">
+        <div class="cta-block" data-reveal>
+          <span class="section-num">08 / CONTACT</span>
+          <h2 class="cta-title" data-i18n="contact.title">Есть ручной процесс, который хочется автоматизировать?</h2>
+          <p class="cta-text" data-i18n="contact.text">Опишите задачу — разберу текущую схему и предложу, как можно сократить ручную работу, связать сервисы или внедрить AI.</p>
+          <div class="cta-actions">
+            <a href="https://t.me/LinaWalker27" target="_blank" rel="noopener" class="btn btn-primary btn-lg js-magnetic" data-i18n="cta.main2">Обсудить проект</a>
+            <a href="https://github.com/aorlova-techspec" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">GitHub</a>
+          </div>
+          <p class="cta-note" data-i18n="contact.note">Ответ в Telegram в течение рабочего дня</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="year">2026</span> <span data-i18n="footer.copy">Алена Орлова · AI Automation / Integration Expert</span></p>
+      <div class="footer-links">
+        <a href="https://t.me/LinaWalker27" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://github.com/aorlova-techspec" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/grid-bg.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

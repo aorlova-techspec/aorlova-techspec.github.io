@@ -1,0 +1,8 @@
+# Не публикуем служебные файлы
+TECHNICAL_SPEC.md
+TECHNICAL_SPEC — копия.md
+alena_orlova_portfolio_short.txt
+.claude/
+node_modules/
+.DS_Store
+Thumbs.db
